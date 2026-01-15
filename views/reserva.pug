@@ -1,0 +1,111 @@
+extends ./layout/index
+
+block contenido
+    main.container.mt-5.contenedorReserva
+        h1 Ven a probar Deliciosso
+
+        if anulada == '1'
+            .alert.alert-success Reserva anulada correctamente.
+        else if anulada == '0'
+            .alert.alert-warning No se encontró ninguna reserva con esos datos.
+
+        .row
+            .col
+                form(action="/reserva" method="POST")
+                    .mb-3
+                        label.form-label(for="nombre") Nombre de la reserva
+                        input#nombre.form-control(
+                            type="text"
+                            placeholder="Tu nombre"
+                            name="nombre"
+                            required
+                        )
+
+                    .mb-3
+                        label.form-label(for="correo") Correo electrónico
+                        input#correo.form-control(
+                            type="email"
+                            placeholder="Tu correo"
+                            name="correo"
+                            required
+                        )
+
+                    .mb-3
+                        label.form-label(for="telefono") Teléfono
+                        input#telefono.form-control(
+                            type="tel"
+                            placeholder="Tu teléfono"
+                            name="telefono"
+                            required
+                        )
+
+                    .mb-3
+                        label.form-label(for="comensales") Número de comensales
+                        input#comensales.form-control(
+                            type="number"
+                            name="comensales"
+                            min="1"
+                            max="10"
+                            required
+                        )
+
+                    .mb-3
+                        label.form-label(for="fecha") Fecha
+                        input#fecha.form-control(
+                            type="date"
+                            name="fecha"
+                            required
+                        )
+
+                    .mb-3
+                        label.form-label(for="hora") Hora
+                        select#hora.form-select(name="hora" required)
+                            option(value="" selected disabled) Selecciona una hora
+                            option(value="13:00") 13:00
+                            option(value="13:30") 13:30
+                            option(value="14:00") 14:00
+                            option(value="20:30") 20:30
+                            option(value="21:00") 21:00
+                            option(value="21:30") 21:30
+                            option(value="22:00") 22:00
+
+                    button.btn.btn-primary(type="submit") Reservar
+
+        hr.my-5
+
+        h2.h4.mb-3 Anular reserva
+
+        .row
+            .col
+                form(action="/reserva/anular" method="POST")
+                    .mb-3
+                        label.form-label(for="nombreAnular") Nombre de la reserva
+                        input#nombreAnular.form-control(
+                            type="text"
+                            name="nombre"
+                            placeholder="Nombre de la reserva"
+                            required
+                        )
+
+                    .mb-3
+                        label.form-label(for="correoAnular") Correo electrónico
+                        input#correoAnular.form-control(
+                            type="email"
+                            name="correo"
+                            placeholder="Correo usado en la reserva"
+                            required
+                        )
+
+                    .mb-3
+                        label.form-label(for="fechaAnular") Fecha de la reserva
+                        input#fechaAnular.form-control(
+                            type="date"
+                            name="fecha"
+                            required
+                        )
+
+                    button.btn.btn-danger(type="submit") Anular reserva
+
+
+
+

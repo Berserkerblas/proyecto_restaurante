@@ -1,0 +1,123 @@
+extends ./layout/index
+
+block contenido
+    main.container-fluid.px-0.pb-5
+
+        #carouselDeliciosso.carousel.slide(
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+            data-bs-wrap="true"
+            data-bs-pause="false"
+        )
+            .carousel-inner
+                .carousel-item.active
+                    img.d-block.w-100(
+                        src="/img/foto1.jpg"
+                    )
+
+                .carousel-item
+                    img.d-block.w-100(
+                        src="/img/foto2.jpg"
+                    )
+
+                .carousel-item
+                    img.d-block.w-100(
+                        src="/img/foto3.jpg"
+                    )
+
+
+            .container.py-5.text-center
+                h2.mb-4 Bienvenido a Deliciosso
+
+                p
+                    | Bienvenidos a Deliciosso, donde podrán disfrutar de una extensa variedad de tapas elaboradas a partir de una base manchega combinada con una interpretación personalizada, dándole un toque original y moderno a la cocina tradicional. Además, disponemos de una amplia carta de vinos.
+
+                p
+                    | El origen de Deliciosso viene del año 2013, donde varios jóvenes amigos tomaron la valentía suficiente para abrir su propio negocio y reflejar sus experiencias previas en el mundo hostelero.
+
+                p
+                    | En Deliciosso, encontrarás a la par que un servicio profesional, un trato cercano y familiar, donde poder compartir momentos agradables y divertidos.
+
+                .row.mt-5.text-center
+                    .col-6
+                        a(
+                            href="/docs/cartaEspañol.txt"
+                            download="cartaEspañol.txt"
+                        )
+                            i.fa-solid.fa-file-arrow-down.fs-1(style="color: red; cursor: pointer;")
+                        p.mt-2 Descargar carta
+
+                    .col-6
+                        a(
+                            href="/docs/cartaIngles.txt"
+                            download="cartaIngles.txt"
+                        )
+                            i.fa-solid.fa-file-arrow-down.fs-1(style="color: blue; cursor: pointer;")
+                        p.mt-2 Descargar carta en inglés
+
+            hr.my-5
+
+            .container.py-5.containerGoogle
+                .row.justify-content-center.mb-4
+                    .col-md-6
+                        img.img-fluid.mb-3(
+                            src="/img/opinion2.png"
+                        )
+
+                        img.img-fluid(
+                            src="/img/opinion1.jpg"
+                        )
+
+                    .col.md-6
+                        h3.mb-4 ⭐ Lo que dicen de nosotros
+
+                        p
+                        | En Restaurante Deliciosso creemos firmemente que no hay mejor carta de presentación que la opinión sincera de quienes nos visitan. Cada reseña que recibimos es el reflejo de momentos compartidos alrededor de la mesa, de sabores que dejan huella y de una atención cercana y cuidada que ponemos en cada detalle, desde el primer saludo hasta el último plato.
+
+                        p
+                        |   Vuestras palabras nos inspiran a seguir creciendo día a día, a perfeccionar nuestra cocina y a mantener un nivel de calidad constante. Nos motivan a innovar sin perder la esencia, a seleccionar con mimo cada ingrediente y a ofrecer una experiencia gastronómica que combine tradición, creatividad y pasión por el buen hacer.
+
+                        p
+                        |   En Restaurante Deliciosso trabajamos con un objetivo claro: que cada visita se convierta en un recuerdo agradable, que apetezca repetir y recomendar. La hospitalidad, el trato familiar y el respeto por el producto son los pilares que nos definen y que intentamos transmitir en cada servicio.
+
+                        p
+                        |   Gracias a todas las personas que ya han compartido su experiencia con nosotros y a quienes estáis a punto de descubrirnos. Vuestra opinión es fundamental para seguir mejorando y será siempre bienvenida en nuestra casa.
+
+
+            hr.my-5
+
+            .container.py-5.containerFotos
+                .row.g-4
+                    .col-12.col-sm-6.col-lg-3
+                        .card.h-100
+                            img.card-img-top(src="/img/calidad.jpg" alt="Calidad")
+                            .card-body
+                                h5.card-title Calidad
+                                p.card-text Ingredientes seleccionados y cocina de primer nivel. Lo que nos ha otorgado premios nacionales.
+
+                    .col-12.col-sm-6.col-lg-3
+                        .card.h-100
+                            img.card-img-top(src="/img/ambiente.jpg" alt="Ambiente")
+                            .card-body
+                                h5.card-title Ambiente
+                                p.card-text Un espacio acogedor para disfrutar en buena compañía.
+
+                    .col-12.col-sm-6.col-lg-3
+                        .card.h-100
+                            img.card-img-top(src="/img/eventos.jpg" alt="Eventos")
+                            .card-body
+                                h5.card-title Eventos
+                                p.card-text Organizamos momentos únicos para ocasiones especiales.
+
+                    .col-12.col-sm-6.col-lg-3
+                        .card.h-100
+                            img.card-img-top(src="/img/atencion.jpg" alt="Atención")
+                            .card-body
+                                h5.card-title Atención
+                                p.card-text Trato cercano y personalizado en cada visita.
+
+
+
+
+
+

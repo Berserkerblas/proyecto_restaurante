@@ -1,0 +1,26 @@
+extends ./layout/index
+
+block contenido
+    main.container.mt-5.contenedorAlergenos
+        .row
+            .col-md-4
+                h3
+                    i.fa-solid.fa-triangle-exclamation(style="color: orange;")
+                    |   Estimados clientes:
+                br
+                p Por su seguridad, le informamos de que algunos de nuestros platos pueden contener alérgenos o trazas de los mismos.
+                p Antes de realizar su pedido, revise la información de alérgenos disponible y consulte a nuestro personal si tiene cualquier duda o necesidad específica.
+                p Si necesitan información adicional, pregunte a cualquiera de nuestros trabajadores sin ningún tipo de porblema.
+                p Gracias por su colaboración.
+                br
+                br
+                img(src='/img/alergenos.jpg' class="foto_alergenos")
+            .col-md-2
+            .col-md-6
+                img(src=`/img/${resultado.imagen}` class="foto_grande")
+                h1=resultado.nombre
+                h2
+                    i.fa-solid.fa-skull-crossbones(style="color: red;")
+                    |  #{resultado.descripcion}
+
+

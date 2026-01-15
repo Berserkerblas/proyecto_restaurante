@@ -1,0 +1,219 @@
+/*ESTILOS GENERALES*/
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+h1, h2, h3, h5{
+    font-family: "Staatliches";
+}
+
+h4{
+    font-family: "Imperial Script", cursive;
+    font-size: 200px;
+    font-weight: bolder;
+}
+
+p, li, a{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/*CSS DEL HEADER*/
+
+header {
+    background-color: indianred;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header .row {
+    align-items: center;
+}
+
+header img {
+    max-height: 75px;
+    border: black solid 2px;
+    border-radius: 50%;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+header .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+header .nav-link:hover::after {
+    width: 100%;
+}
+
+header .col-md-4{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 100px;
+    align-items: center;
+}
+
+
+header .col-md-8 {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+header nav {
+    justify-content: flex-end;
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+
+header .navegacion{
+    background-color: #710B04;
+}
+
+
+
+/*CSS DEL FOOTER*/
+footer {
+    height: 10vh;
+    background-color: #710B04;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer .nav-link {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.footer .nav-link:hover {
+    text-decoration: underline;
+}
+
+.footer .destacado {
+    font-weight: bold;
+}
+
+footer .copyright {
+    margin: 0;
+    color: navajowhite;
+    font-size: 0.9rem;
+}
+
+
+/* CSS DE NOSOTROS*/
+.contenedorNosotros {
+    margin-bottom: 100px;
+}
+
+.contenedorNosotros img {
+    height: 70vh;
+    padding-bottom: 100px;
+}
+
+
+/*CARTA*/
+.contenedorCarta{
+    padding-bottom: 100px;
+}
+
+.contenedorCarta img{
+    width: 100%;
+    height: 300px;
+}
+
+.foto_grande{
+    width: 100%;
+    height: 400px;
+}
+
+
+/* Reservas */
+
+.contenedorReserva{
+    padding-bottom: 100px;
+}
+
+/* CSS DE INICIO*/
+
+#carouselDeliciosso .carousel-item {
+    height: 300px;
+}
+
+#carouselDeliciosso .carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerFotos img{
+    width: 100%;
+    height: 200px;
+}
+
+.containerGoogle img{
+    width: 60%;
+    height: 200px;
+}
+
+.contenedorAlergenos{
+    padding-bottom: 100px;
+}
+
+.containerBotones {
+    display: flex;
+    gap: 20px;
+}
+
+.containerBotones a {
+    width: 200px;
+    text-align: center;
+    background-color: darkorange;
+}
+
+
+
+.containerFotos .card:hover {
+    transform: translateY(-8px);
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+ARTA DEL RESTAURANTE
+
+Entrantes
+
+Tortilla de patatas – 8,50 €
+Contiene: huevo
+
+Croquetas caseras – 9,00 €
+Contiene: leche, gluten
+
+Ensaladas
+
+Ensalada César – 10,50 €
+Contiene: huevo, leche, pescado
+
+Platos principales
+
+Hamburguesa clásica – 12,00 €
+Contiene: gluten, leche
+
+Pizza margarita – 11,50 €
+Contiene: gluten, leche
+
+Paella mixta – 15,00 €
+Contiene: marisco
+
+Salmón a la plancha – 14,50 €
+Contiene: pescado
+
+Postres
+
+Tarta de chocolate – 5,50 €
+Contiene: gluten, huevo, leche
+
+Flan casero – 4,50 €
+Contiene: huevo, leche
+
+Bebidas
+
+Coca-Cola – 2,00 €
+Contiene: azúcar
+
+Cerveza – 3,00 €
+Contiene: alcohol
+
+Vino – 10,50 €
+Contiene: alcohol

@@ -1,0 +1,47 @@
+RESTAURANT MENU
+
+Starters
+
+Spanish Omelette – €8.50
+Contains: egg
+
+Homemade Croquettes – €9.00
+Contains: milk, gluten
+
+Salads
+
+Caesar Salad – €10.50
+Contains: egg, milk, fish
+
+Main Courses
+
+Classic Burger – €12.00
+Contains: gluten, milk
+
+Margherita Pizza – €11.50
+Contains: gluten, milk
+
+Mixed Paella – €15.00
+Contains: seafood
+
+Grilled Salmon – €14.50
+Contains: fish
+
+Desserts
+
+Chocolate Cake – €5.50
+Contains: gluten, egg, milk
+
+Homemade Flan – €4.50
+Contains: egg, milk
+
+Drinks
+
+Coca-Cola – €2.00
+Contains: sugar
+
+Beer – €3.00
+Contains: alcohol
+
+Wine – €10.50
+Contains: alcohol

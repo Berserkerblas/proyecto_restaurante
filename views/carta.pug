@@ -1,0 +1,21 @@
+extends ./layout/index
+
+block contenido
+    main.container.mt-5.contenedorCarta
+        .row.cartaUno
+            each plato in platos
+                .col-md-6.col-lg-4.mb-4
+                    .card.text-center
+                        img.card-img-top(src=`img/${plato.imagen}`)
+                        .card-body
+                            h3
+                                i.fa-solid.fa-utensils(style="color: blue;")
+                                |  #{plato.nombre}
+                            p
+                                i.fa-solid.fa-coins(style="color: orange;")
+                                |   Precio: #{plato.precio} €
+                            a(href=`carta/${plato.slug}`, class="btn btn-success btn-block") Consulte alérgenos
+
+
+
+
