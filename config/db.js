@@ -2,10 +2,7 @@
 import Sequelize from "sequelize";
 
 
-const db = new Sequelize(process.env.BASEDEDATOS, process.env.USUARIO, process.env.CONTRASENA, {
-    host: process.env.HOST,
-    port: '3306',
-    dialect: 'mysql',
+const db = new Sequelize(process.env.CONEXION, {
     define: {
         timestamps: false
     },
